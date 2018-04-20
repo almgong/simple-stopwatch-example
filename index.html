@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example stopwatch</title>
+    <style type="text/css">
+      .stopwatch {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: center;
+        border: 1px solid black;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .stopwatch__display {
+        flex: 2;
+        font-size: 60px;
+      }
+
+      .stopwatch__control {
+        flex: 1;
+      }
+
+      .stopwatch__meta {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stopwatch">
+      <div class="stopwatch__display"></div>
+      <div class="stopwatch__control">
+        <button class="stopwatch__control--start">></button>
+        <button class="stopwatch__control--stop">||</button>
+        <button class="stopwatch__control--lap">lap</button>
+      </div>
+      <div class="stopwatch__meta"></div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/index.bundle.js"></script>
+  </body>
+</html>
